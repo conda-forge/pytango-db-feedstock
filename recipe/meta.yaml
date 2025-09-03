@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("3.9") %}
 {% set name = "pytango-db" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytango_db-{{ version }}.tar.gz
-  sha256: 4c7d517fc5e0a9d6ce9dbe8bd7cd17c64c2a2ee6a126de1ce883647aa0767ef4
+  sha256: 2c4bc8315eb5df2c4351fb72d914b65520c112a2356a6fb20ab18dbdbebbf369
 
 build:
   entry_points:
