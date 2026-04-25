@@ -29,7 +29,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pytango
-    - gevent
 
 tests:
   - python:
