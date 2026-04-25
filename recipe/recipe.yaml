@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pytango-db
-  version: 0.5.1
+  version: "0.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pytango_db-${{ version }}.tar.gz
-  sha256: 0455818f9c7a810012ee3f89bed841afc583fa225c6841b2314126f61427d429
+  sha256: 013539685d521196afe25ff9b02d1e2d69d133033925dcaa41e1d971a7dced31
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -29,13 +29,12 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pytango
-    - gevent
 
 tests:
   - python:
       imports:
         - databaseds
-      pip_check: True
+      pip_check: true
       python_version:
         - ${{ python_min }}.*
         - 3.*
