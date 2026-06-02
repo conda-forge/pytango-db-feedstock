@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pytango-db
-  version: "0.6.0"
+  version: "0.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pytango_db-${{ version }}.tar.gz
-  sha256: 013539685d521196afe25ff9b02d1e2d69d133033925dcaa41e1d971a7dced31
+  sha256: f8936cdc0034a43fe0adacff30763d2a66fe922a3d95fe251181d842bb3f004f
 
 build:
   number: 0
