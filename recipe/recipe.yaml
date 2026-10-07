@@ -19,6 +19,7 @@ build:
   python:
     entry_points:
       - PyDatabaseds = databaseds.database:main
+      - pytango-db-migrate-sqlite = databaseds.migrate:main
 
 requirements:
   host:
@@ -40,6 +41,7 @@ tests:
         - 3.*
   - script:
       - PyDatabaseds --help
+      - pytango-db-migrate-sqlite --help
     requirements:
       run:
         - python ${{ python_min }}.*
